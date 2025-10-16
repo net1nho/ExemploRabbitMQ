@@ -6,13 +6,13 @@ import java.io.IOException;
 
 public class Receptor {
 
-  private final static String QUEUE_NAME = "minha-fila";
+  private final static String QUEUE_NAME = "net1nho";
 
   public static void main(String[] argv) throws Exception {
     ConnectionFactory factory = new ConnectionFactory();
-    factory.setHost("ip-da-instancia-da-aws"); // Alterar
-    factory.setUsername("usuário-do-rabbitmq-server"); // Alterar
-    factory.setPassword("senha-do-rabbitmq-server"); // Alterar
+    factory.setHost("54.90.228.141"); // Alterar
+    factory.setUsername("admin"); // Alterar
+    factory.setPassword("password"); // Alterar
     factory.setVirtualHost("/");   
     Connection connection = factory.newConnection();
     Channel channel = connection.createChannel();
